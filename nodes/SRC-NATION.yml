@@ -1,0 +1,78 @@
+steps:
+  NATION-ab1015ac-41b9-4af0-8ba6-9e2072141a5f:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: Nation data as defined by TPC-H
+      locationName: SRC
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 180b19e8-a4e3-457c-866b-7bfab411f24d
+              stepCounter: ab1015ac-41b9-4af0-8ba6-9e2072141a5f
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: N_NATIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2785e22c-cbc1-49ba-89c7-5628a2a1ebea
+              stepCounter: ab1015ac-41b9-4af0-8ba6-9e2072141a5f
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: N_NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 9534dd3c-1a9e-450d-8ed9-0cac50ba9856
+              stepCounter: ab1015ac-41b9-4af0-8ba6-9e2072141a5f
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: N_REGIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c32f91fd-211d-4275-a754-4a8e8c64acd2
+              stepCounter: ab1015ac-41b9-4af0-8ba6-9e2072141a5f
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: N_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SRC', 'NATION') }}
+      name: NATION
+      schema: ""
+      sqlType: Source
+      table: NATION
+      type: sourceInput
+    stepCounter: ab1015ac-41b9-4af0-8ba6-9e2072141a5f
